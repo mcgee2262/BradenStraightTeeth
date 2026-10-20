@@ -1,5 +1,9 @@
 # Braden’s Straight Teeth
 
+## 👉 [**Open the website**](https://mcgee2262.github.io/braden-tooth-and-tide/)
+
+https://mcgee2262.github.io/braden-tooth-and-tide/
+
 *Fossils from the Carolina Coast.*
 
 A demo website for a shark tooth shop on Oak Island, North Carolina, owned by Braden Dowling (Owner & CEO).
