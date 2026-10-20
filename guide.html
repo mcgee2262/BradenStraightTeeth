@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shark Tooth ID Guide · Braden Tooth &amp; Tide</title>
+  <meta name="description" content="How to identify megalodon, great white, mako, tiger, sand tiger and more, plus tips for hunting shark teeth on Oak Island, NC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="guide">
+  <div id="site-header"></div>
+
+  <section class="hero page-hero">
+    <div class="wrap" style="grid-template-columns:1fr;text-align:center">
+      <div>
+        <p class="eyebrow">Shark Tooth Guide</p>
+        <h1>Whose Tooth Is That?</h1>
+        <p class="lead" style="margin:16px auto 0">Ten sharks, one guide. Learn to tell a megalodon from a great white, then head out and find your own on Oak Island.</p>
+        <div class="hero-actions" style="justify-content:center;margin-top:26px">
+          <a class="btn btn-coral" href="#quiz">Take the quiz</a>
+          <a class="btn btn-ghost" href="#hunt">Hunting tips</a>
+        </div>
+      </div>
+    </div>
+    <div class="waves" aria-hidden="true">
+      <svg viewBox="0 0 1600 120" preserveAspectRatio="none"><path d="M0 50 Q100 15 200 50 T400 50 T600 50 T800 50 T1000 50 T1200 50 T1400 50 T1600 50 V120 H0Z" fill="#7fd3dc"/></svg>
+      <svg viewBox="0 0 1600 120" preserveAspectRatio="none"><path d="M0 70 Q100 40 200 70 T400 70 T600 70 T800 70 T1000 70 T1200 70 T1400 70 T1600 70 V120 H0Z" fill="#1e9db1"/></svg>
+    </div>
+  </section>
+
+  <section class="band shallow flat" style="padding-top:30px">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">Identify it</p><h2>The Species</h2><p>Look at three things: the shape of the blade, whether the edges are serrated, and the shape of the root.</p></div>
+      <div class="species-grid" id="species-grid"></div>
+    </div>
+  </section>
+
+  <section class="band mid" id="hunt">
+    <div class="bubbles" data-count="12"></div>
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">Go find your own</p><h2>Hunting Teeth on Oak Island</h2><p>Braden’s best tips for walking away with a handful.</p></div>
+      <ol class="tips">
+        <li><h3>Go at low tide</h3><p>Start about two hours before low tide. The falling water uncovers fresh shell beds right at the water’s edge.</p></li>
+        <li><h3>Hunt after a storm</h3><p>Big waves and strong northeast winds churn up the sand and drop new teeth on the beach. Winter is prime time.</p></li>
+        <li><h3>Find the shell line</h3><p>Teeth collect with the shells and gravel where waves drop them. Crouch down and scan the darker piles slowly.</p></li>
+        <li><h3>Look for shape and shine</h3><p>Fossil teeth are usually black, gray or brown. Look for a glossy little triangle, not the color of a shell.</p></li>
+        <li><h3>Bring a sifter</h3><p>A simple mesh screen in the shallow surf lets the sand wash through and leaves the teeth behind.</p></li>
+        <li><h3>Respect the beach</h3><p>Oak Island is a sea turtle nesting beach from May to October. Stay clear of marked nests and leave the dunes alone.</p></li>
+      </ol>
+      <div class="note" style="margin-top:30px;color:var(--ink)"><b>Why are fossil teeth black?</b> Over thousands to millions of years, minerals in the surrounding sediment slowly replace the original tooth material. The color of the teeth comes from those minerals, which is why beach teeth here are usually black, gray or brown, while desert teeth from Peru can be honey-tan.</div>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">How we grade</p><h2>Beach, Collector or Museum?</h2></div>
+      <div class="grades" id="grades" style="color:var(--ink)"></div>
+    </div>
+  </section>
+
+  <section class="band abyss" id="quiz">
+    <div class="bubbles" data-count="16"></div>
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">Test yourself</p><h2>Name That Tooth</h2><p>Score: <span class="score" id="quiz-score" style="color:var(--sun)">0 / 0</span></p></div>
+      <div class="quiz">
+        <div id="quiz-art"></div>
+        <div class="quiz-options" id="quiz-options"></div>
+        <p class="quiz-feedback" id="quiz-feedback"></p>
+        <button class="btn btn-coral" id="quiz-next" hidden>Next tooth →</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/teeth.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
