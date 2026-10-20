@@ -1,4 +1,4 @@
-# Braden Tooth & Tide
+# Braden’s Straight Teeth
 
 *Fossils from the Carolina Coast.*
 

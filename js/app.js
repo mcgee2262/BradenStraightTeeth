@@ -9,7 +9,7 @@ const speciesName = p => (p.species && SPECIES[p.species] && !p.kind ? SPECIES[p
 
 /* ---------- Cart (stored in this browser only) ---------- */
 const Cart = {
-  key: "btt-cart",
+  key: "bst-cart",
   read() { try { return JSON.parse(localStorage.getItem(this.key)) || {}; } catch { return {}; } },
   write(c) { try { localStorage.setItem(this.key, JSON.stringify(c)); } catch {} updateCartCount(); },
   add(id, qty = 1) { const c = this.read(); c[id] = (c[id] || 0) + qty; this.write(c); },
@@ -36,9 +36,9 @@ function renderChrome() {
   const page = document.body.dataset.page;
   const links = [["index.html", "Home", "home"], ["shop.html", "Shop", "shop"], ["guide.html", "Tooth Guide", "guide"], ["about.html", "About", "about"], ["visit.html", "Visit", "visit"]];
   $("#site-header").outerHTML = `
-    <div class="demo-strip">Demo website · Braden Tooth &amp; Tide is a concept shop. No real orders or payments are processed.</div>
+    <div class="demo-strip">Demo website · Braden’s Straight Teeth is a concept shop. No real orders or payments are processed.</div>
     <header class="site-header"><div class="wrap">
-      <a class="brand" href="index.html">${logoSVG()}<span><b>Braden</b> Tooth &amp; Tide</span></a>
+      <a class="brand" href="index.html">${logoSVG()}<span><b>Braden’s</b> Straight Teeth</span></a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="site-nav">
         ${links.map(([href, label, key]) => `<a href="${href}" class="${key === page ? "active" : ""}">${label}</a>`).join("")}
@@ -49,14 +49,14 @@ function renderChrome() {
     <footer class="site-footer"><div class="wrap">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="index.html">${logoSVG()}<span>Tooth &amp; Tide</span></a>
+          <a class="brand" href="index.html">${logoSVG()}<span>Straight Teeth</span></a>
           <p>Fossils from the Carolina Coast. Hand-picked, honestly graded shark teeth from Oak Island, North Carolina.</p>
         </div>
         <div><h4>Shop</h4><a href="shop.html">All teeth</a><a href="shop.html?species=meg">Megalodon</a><a href="shop.html?species=gw">Great White</a><a href="shop.html?gifts=1">Grab bags &amp; gifts</a></div>
         <div><h4>Learn</h4><a href="guide.html">Tooth ID guide</a><a href="guide.html#hunt">Hunting on Oak Island</a><a href="guide.html#quiz">Tooth quiz</a><a href="about.html">Our story</a></div>
         <div><h4>Visit</h4><p>214 Sandpiper Way<br>Oak Island, NC 28465</p><a href="visit.html">Hours &amp; directions</a></div>
       </div>
-      <div class="footer-bottom">© ${new Date().getFullYear()} Braden Tooth &amp; Tide · Braden Dowling, Owner &amp; CEO<br>
+      <div class="footer-bottom">© ${new Date().getFullYear()} Braden’s Straight Teeth · Braden Dowling, Owner &amp; CEO<br>
         This is a demo website. The address, reviews and prices are examples, and nothing here is for sale.</div>
     </div></footer>`;
 
@@ -231,7 +231,7 @@ function initTooth() {
     main.innerHTML = `<div style="text-align:center"><h2>Tooth not found</h2><p>That one may have washed back out to sea.</p><br><a class="btn btn-coral" href="shop.html">Back to the shop</a></div>`;
     return;
   }
-  document.title = `${p.name} · Braden Tooth & Tide`;
+  document.title = `${p.name} · Braden’s Straight Teeth`;
   const sp = p.species && !p.kind ? SPECIES[p.species] : null;
   let qty = 1;
   const rows = [
