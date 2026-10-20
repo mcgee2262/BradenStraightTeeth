@@ -1,8 +1,8 @@
 # Braden’s Straight Teeth
 
-## 👉 [**Open the website**](https://mcgee2262.github.io/braden-tooth-and-tide/)
+## 👉 [**Open the website**](https://mcgee2262.github.io/BradenStraightTeeth/)
 
-https://mcgee2262.github.io/braden-tooth-and-tide/
+https://mcgee2262.github.io/BradenStraightTeeth/
 
 *Fossils from the Carolina Coast.*
 
